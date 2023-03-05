@@ -1,0 +1,2698 @@
+/**************************************************/
+/* Hoja de estilo con el código Css general del   */
+/* Portal web del IPN, estos son estilos creados  */
+/* exclusivamente para los componentes del sitio  */
+/**************************************************/
+
+
+/****** INDICE *****/
+
+/* 1- Backgrounds: Estilos que cambian el color del fondo de los layuots y reglas css para el cambio de color dependiendo del fondo */
+/* 2-  Backgrouds con imágen: Estilos que implementan backgrounds con imágenes y mascaras semitransparentes */
+/* 3-  Titulos: Estilos de los tiutulos generales para el sitio */
+/* 4-  Titulos con fondo: Estilos de titulos que incluyen un fondo de color */
+/* 5-  ESTILOS DEL ENCABEZADO DE GOBIERNO - Estos estilos se realizaron debido a que los estilos del CDN sobreescriben a los de bootstrap */
+/* 6-  Buscador - Estilos base del cuadro de busqueda*/
+/* 7-  Parrafos y enlaces */
+/* 8-  Estilos para imágenes */
+/* 9-  Estilos para listas */
+/* 10- Botones */
+/* 11- Bloques de información - Estilos que contienen los contenedores y bloques donde se agrupan componentes */
+/* 12- Tablas */
+/* 13- MENU DE UTILERIAS */
+/* 14- MENU LATERAL */
+/* 15- ENCABEZADO */
+/* 16- MENU PRINCIPAL */
+/* 17- MENU MANUAL */
+/* 18- BARRA DE NOMBRE DE LAS ESCUELAS */
+/* 19- CARRUSEL CON INDICADORES Y TEXTO */
+/* 20- CARRUSEL CENTRAl */
+/* 21- COMUNICADOS */
+/* 22- Articulos */ 
+/* 23- Directorio */
+/* 24- BUSCADOR DE LA BIBLOTECA */
+/* 25- TABLAS PARA NORMATIVIDAD */
+/* 26- Iconos Redes Sociales */
+/* 27- PIE DE PAGINA */
+
+/*****************************/
+/* ESTILOS PARA APLICATIVOS */
+/***************************/
+/* 28- FICHAS DE DATOS ABIERTOS */
+/* 29- OFERTA EDUCATIVA*/
+
+/* 30 - UTILERIAS */
+
+
+/* 1- Backgrounds */
+.bg--blanco {
+    background: #FFF;
+    color: #666
+}
+
+.bg--patron-blanco {
+    background-color: #FFF;
+    background-image: url("../img/bg-patrones/bkg-04.jpg");
+}
+
+
+.bg--guinda {
+    background: #682444;
+    color: #FFF;
+}
+
+    .bg--guinda h1,
+    .bg--guinda h2,
+    .bg--guinda h3,
+    .bg--guinda h4,
+    .bg--guinda .comunicados-fecha,
+    .bg--guinda .titulo--icono,
+    .bg--guinda .subtitulo,
+    .bg--guinda .btn--redondo,
+    .bg--guinda .btn--cuadrado,
+    .bg--guinda .lista--vinculos,
+    .bg--guinda .lista--vinculos li::before,
+    .bg--guinda .lista--vinculos li a,
+    .bg--guinda .lista--vinculos.noHover li:hover,
+    .bg--guinda .lista--vinculos.noHover li:hover::before,
+    .bg--guinda .lista--vinculos.noHover li a:hover,
+    .bg--guinda .acordeon a.acordeon-collapse,
+    .bg--guinda .menuLateral-menu .nav-link.active, 
+    .bg--guinda .menuLateral-menu .show > .nav-link {
+        border-color: #FFF;
+        color: #FFF;
+    }
+
+        .bg--guinda a:hover {
+            color: #FFF;
+            opacity: 1;
+        }
+
+        .bg--guinda .icono:hover .titulo--icono {
+            color: #DFE2E6;
+        }
+
+        .bg--guinda a,
+        .bg--guinda .menuLateral-menu .nav-link,
+        .bg--guinda .lista--vinculos li:hover,
+        .bg--guinda .lista--vinculos li:hover::before,
+        .bg--guinda .lista--vinculos li a:hover {
+            color: #CCC;
+            border-color: #FFF; 
+        }
+
+        .bg--guinda .lista--vinculos li:hover::before,
+        .bg--guinda .lista--vinculos li a:hover 
+        {
+            color: #CCC;
+        }
+
+        .bg--guinda .btn--redondo:hover,
+        .bg--guinda .btn--cuadrado:hover {
+            background: #FFF;
+            color: #72485C;
+        }
+
+        /* Estilo para que no se vea guinda el texto de hover de los iconos */
+        .bg--guinda .icono:hover .titulo--icono {
+            color: #CCC;
+        }
+
+
+.bg--patron-guinda {
+    background-color: #721B46;
+    background-image: url("../img/bg-patrones/bkg-02.jpg");
+    color: #FFF;
+}
+
+    .bg--patron-guinda h1,
+    .bg--patron-guinda h2,
+    .bg--patron-guinda h3,
+    .bg--patron-guinda h4,
+    .bg--patron-guinda .comunicados-fecha,
+    .bg--patron-guinda .titulo--icono,
+    .bg--patron-guinda .subtitulo,
+    .bg--patron-guinda .btn--redondo,
+    .bg--patron-guinda .btn--cuadrado,
+    .bg--patron-guinda .lista--vinculos,
+    .bg--patron-guinda .lista--vinculos li::before,
+    .bg--patron-guinda .lista--vinculos li a,
+    .bg--patron-guinda .acordeon a.acordeon-collapse,
+    .bg--patron-guinda .menuLateral-menu .nav-link.active, 
+    .bg--patron-guinda .menuLateral-menu .show > .nav-link {
+        border-color: #FFF;
+        color: #FFF;
+    }
+
+        .bg--patron-guinda a:hover {
+            color: #FFF;
+            opacity: 1;
+        }
+
+        .bg--patron-guinda .icono:hover .titulo--icono {
+            color: #DFE2E6;
+        }
+
+        .bg--patron-guinda a,
+        .bg--patron-guinda .menuLateral-menu .nav-link,
+        .bg--patron-guinda .lista--vinculos.noHover li:hover,
+        .bg--patron-guinda .lista--vinculos.noHover li:hover::before,
+        .bg--patron-guinda .lista--vinculos.noHover li a:hover,
+        .bg--patron-guinda .lista--vinculos li:hover,
+        .bg--patron-guinda .lista--vinculos li:hover::before,
+        .bg--patron-guinda .lista--vinculos li a:hover {
+            color: #CCC;
+            border-color: #FFF; 
+        }
+
+        .bg--patron-guinda .lista--vinculos li:hover::before,
+        .bg--patron-guinda .lista--vinculos li a:hover 
+        {
+            color: #CCC;
+        }
+
+        .bg--patron-guinda .btn--redondo:hover,
+        .bg--patron-guinda .btn--cuadrado:hover {
+            background: #FFF;
+            color: #72485C;
+        }
+
+        /* Estilo para que no se vea guinda el texto de hover de los iconos */
+        .bg--patron-guinda .icono:hover .titulo--icono {
+            color: #CCC;
+        }
+
+.bg--gris {
+    background: #F1F1F1;
+}
+
+.bg--patron-gris {
+    background-color: #bc2f2f;
+    background-image: url("../img/bg-patrones/bkg-03.jpg");
+}
+
+.bg--grisOscuro {
+    background: #333;
+    color: #FFF;
+}
+
+    .bg--grisOscuro h1,
+    .bg--grisOscuro h2,
+    .bg--grisOscuro h3,
+    .bg--grisOscuro h4,
+    .bg--grisOscuro .comunicados-fecha,
+    .bg--grisOscuro .titulo--icono,
+    .bg--grisOscuro .subtitulo,
+    .bg--grisOscuro .btn--redondo,
+    .bg--grisOscuro .btn--cuadrado,
+    .bg--grisOscuro .lista--vinculos,
+    .bg--grisOscuro .lista--vinculos li::before,
+    .bg--grisOscuro .lista--vinculos li a,
+    .bg--grisOscuro .lista--vinculos.noHover li:hover,
+    .bg--grisOscuro .lista--vinculos.noHover li:hover::before,
+    .bg--grisOscuro .lista--vinculos.noHover li a:hover,
+    .bg--grisOscuro .acordeon a.acordeon-collapse,
+    .bg--grisOscuro .menuLateral-menu .nav-link.active, 
+    .bg--grisOscuro .menuLateral-menu .show > .nav-link {
+        border-color: #FFF;
+        color: #FFF;
+    }
+
+        .bg--grisOscuro a:hover {
+            color: #FFF;
+            opacity: 1;
+        }
+
+        .bg--grisOscuro .icono:hover .titulo--icono {
+            color: #DFE2E6;
+        }
+
+        .bg--grisOscuro a,
+        .bg--grisOscuro .menuLateral-menu .nav-link,
+        .bg--grisOscuro .lista--vinculos li:hover,
+        .bg--grisOscuro .lista--vinculos li:hover::before,
+        .bg--grisOscuro .lista--vinculos li a:hover {
+            color: #CCC;
+            border-color: #FFF; 
+        }
+
+        .bg--grisOscuro .lista--vinculos li:hover::before,
+        .bg--grisOscuro .lista--vinculos li a:hover 
+        {
+            color: #CCC;
+        }
+
+        .bg--grisOscuro .btn--redondo:hover,
+        .bg--grisOscuro .btn--cuadrado:hover {
+            background: #FFF;
+            color: #72485C;
+        }
+
+        /* Estilo para que no se vea guinda el texto de hover de los iconos */
+        .bg--grisOscuro .icono:hover .titulo--icono {
+            color: #CCC;
+        }
+
+.bg--patron-grisOscuro {
+    background-color: #333333;
+    background-image: url("../img/bg-patrones/bkg-01.jpg");
+
+    color: #FFF;
+}
+
+    .bg--patron-grisOscuro h1,
+    .bg--patron-grisOscuro h2,
+    .bg--patron-grisOscuro h3,
+    .bg--patron-grisOscuro h4,
+    .bg--patron-grisOscuro .comunicados-fecha,
+    .bg--patron-grisOscuro .titulo--icono,
+    .bg--patron-grisOscuro .subtitulo,
+    .bg--patron-grisOscuro .btn--redondo,
+    .bg--patron-grisOscuro .btn--cuadrado,
+    .bg--patron-grisOscuro .lista--vinculos,
+    .bg--patron-grisOscuro .lista--vinculos li::before,
+    .bg--patron-grisOscuro .lista--vinculos li a,
+    .bg--patron-grisOscuro .lista--vinculos.noHover li:hover,
+    .bg--patron-grisOscuro .lista--vinculos.noHover li:hover::before,
+    .bg--patron-grisOscuro .lista--vinculos.noHover li a:hover,
+    .bg--patron-grisOscuro .acordeon a.acordeon-collapse,
+    .bg--patron-grisOscuro .menuLateral-menu .nav-link.active, 
+    .bg--patron-grisOscuro .menuLateral-menu .show > .nav-link {
+        border-color: #FFF;
+        color: #FFF;
+    }
+
+        .bg--patron-grisOscuro a:hover {
+            color: #FFF;
+            opacity: 1;
+        }
+
+        .bg--patron-grisOscuro .icono:hover .titulo--icono {
+            color: #DFE2E6;
+        }
+
+        .bg--patron-grisOscuro a,
+        .bg--patron-grisOscuro .menuLateral-menu .nav-link,
+        .bg--patron-grisOscuro .lista--vinculos li:hover,
+        .bg--patron-grisOscuro .lista--vinculos li:hover::before,
+        .bg--patron-grisOscuro .lista--vinculos li a:hover {
+            color: #CCC;
+            border-color: #FFF; 
+        }
+
+        .bg--patron-grisOscuro .lista--vinculos li:hover::before,
+        .bg--patron-grisOscuro .lista--vinculos li a:hover 
+        {
+            color: #CCC;
+        }
+
+        .bg--patron-grisOscuro .btn--redondo:hover,
+        .bg--patron-grisOscuro .btn--cuadrado:hover {
+            background: #FFF;
+            color: #72485C;
+        }
+
+        .bg--patron-grisOscuro .icono:hover .titulo--icono {
+            color: #CCC;
+        }
+
+
+.bg--grisAzulado {
+    background-color: #3A474F;
+    color: #FFF;
+}
+
+    .bg--grisAzulado h1,
+    .bg--grisAzulado h2,
+    .bg--grisAzulado h3,
+    .bg--grisAzulado h4,
+    .bg--grisAzulado .comunicados-fecha,
+    .bg--grisAzulado .titulo--icono,
+    .bg--grisAzulado .subtitulo,
+    .bg--grisAzulado .btn--redondo,
+    .bg--grisAzulado .btn--cuadrado,
+    .bg--grisAzulado .lista--vinculos,
+    .bg--grisAzulado .lista--vinculos li::before,
+    .bg--grisAzulado .lista--vinculos li a,
+    .bg--grisAzulado .lista--vinculos.noHover li:hover,
+    .bg--grisAzulado .lista--vinculos.noHover li:hover::before,
+    .bg--grisAzulado .lista--vinculos.noHover li a:hover,
+    .bg--grisAzulado .acordeon a.acordeon-collapse,
+    .bg--grisAzulado .menuLateral-menu .nav-link.active, 
+    .bg--grisAzulado .menuLateral-menu .show > .nav-link {
+        border-color: #FFF;
+        color: #FFF;
+    }
+
+        .bg--grisAzulado a:hover {
+            color: #FFF;
+            opacity: 1;
+        }
+
+        .bg--grisAzulado .icono:hover .titulo--icono {
+            color: #DFE2E6;
+        }
+
+        .bg--grisAzulado a,
+        .bg--grisAzulado .menuLateral-menu .nav-link,
+        .bg--grisAzulado .lista--vinculos li:hover,
+        .bg--grisAzulado .lista--vinculos li:hover::before,
+        .bg--grisAzulado .lista--vinculos li a:hover {
+            color: #CCC;
+            border-color: #FFF; 
+        }
+
+        .bg--grisAzulado .lista--vinculos li:hover::before,
+        .bg--grisAzulado .lista--vinculos li a:hover 
+        {
+            color: #CCC;
+        }
+
+        .bg--grisAzulado .btn--redondo:hover,
+        .bg--grisAzulado .btn--cuadrado:hover {
+            background: #FFF;
+            color: #72485C;
+        }
+
+.bg--grisMedio {
+    background: #999;
+    color: #FFF;
+}
+
+    .bg--grisMedio h1,
+    .bg--grisMedio h2,
+    .bg--grisMedio h3,
+    .bg--grisMedio h4,
+    .bg--grisMedio .comunicados-fecha,
+    .bg--grisMedio .titulo--icono,
+    .bg--grisMedio .subtitulo,
+    .bg--grisMedio .btn--redondo,
+    .bg--grisMedio .btn--cuadrado,
+    .bg--grisMedio .lista--vinculos,
+    .bg--grisMedio .lista--vinculos li::before,
+    .bg--grisMedio .lista--vinculos li a,
+    .bg--grisMedio .lista--vinculos.noHover li:hover,
+    .bg--grisMedio .lista--vinculos.noHover li:hover::before,
+    .bg--grisMedio .lista--vinculos.noHover li a:hover,
+    .bg--grisMedio .acordeon a.acordeon-collapse,
+    .bg--grisMedio .menuLateral-menu .nav-link.active, 
+    .bg--grisMedio .menuLateral-menu .show > .nav-link {
+        border-color: #FFF;
+        color: #FFF;
+    }
+
+        .bg--grisMedio a:hover {
+            color: #FFF;
+            opacity: 1;
+        }
+
+        .bg--grisMedio .icono:hover .titulo--icono {
+            color: #DFE2E6;
+        }
+
+        .bg--grisMedio a,
+        .bg--grisMedio .menuLateral-menu .nav-link,
+        .bg--grisMedio .lista--vinculos li:hover,
+        .bg--grisMedio .lista--vinculos li:hover::before,
+        .bg--grisMedio .lista--vinculos li a:hover {
+            color: #CCC;
+            border-color: #FFF; 
+        }
+
+        .bg--grisMedio .lista--vinculos li:hover::before,
+        .bg--grisMedio .lista--vinculos li a:hover 
+        {
+            color: #CCC;
+        }
+
+        .bg--grisMedio .btn--redondo:hover,
+        .bg--grisMedio .btn--cuadrado:hover {
+            background: #FFF;
+            color: #72485C;
+        }
+
+        /* Estilo para que no se vea guinda el texto de hover de los iconos */
+        .bg--grisMedio .icono:hover .titulo--icono {
+            color: #CCC;
+        }
+
+.bg--negro {
+    background-color: #090909 !important;
+    background-image: none;
+    color: #FFF;  
+}
+
+    .bg--negro h1,
+    .bg--negro h2,
+    .bg--negro h3,
+    .bg--negro h4,
+    .bg--negro .texto--resaltado,
+    .bg--negro p,
+    .bg--negro .comunicados-fecha,
+    .bg--negro .titulo--icono,
+    .bg--negro .subtitulo,
+    .bg--negro .btn--redondo,
+    .bg--negro .btn--cuadrado,
+    .bg--negro .lista--vinculos,
+    .bg--negro .lista--vinculos li::before,
+    .bg--negro .lista--vinculos li a,
+    .bg--negro .lista--vinculos.noHover li:hover,
+    .bg--negro .lista--vinculos.noHover li:hover::before,
+    .bg--negro .lista--vinculos.noHover li a:hover,
+    .bg--negro .acordeon a.acordeon-collapse,
+    .bg--negro .menuLateral-menu .nav-link.active, 
+    .bg--negro .menuLateral-menu .show > .nav-link {
+        border-color: #FFF;
+        color: #FFF;
+    }
+
+        .bg--negro a, 
+        .bg--negro a p {
+            color: red !important;
+        }
+
+        .bg--negro a:hover {
+            color: #FFF;
+            opacity: 1;
+        }
+
+        .bg--negro .icono:hover .titulo--icono {
+            color: #DFE2E6;
+        }
+
+        .bg--negro a,
+        .bg--negro .menuLateral-menu .nav-link,
+        .bg--negro .lista--vinculos li:hover,
+        .bg--negro .lista--vinculos li:hover::before,
+        .bg--negro .lista--vinculos li a:hover {
+            color: #CCC;
+            border-color: #FFF; 
+        }
+
+        .bg--negro .lista--vinculos li:hover::before,
+        .bg--negro .lista--vinculos li a:hover 
+        {
+            color: #CCC;
+        }
+
+        .bg--negro .btn--redondo:hover,
+        .bg--negro .btn--cuadrado:hover {
+            background: #FFF;
+            color: #72485C;
+        }
+
+/* 2- Backgrouds con imágen*/
+.bkImagen {
+    background-image: url("../img/objetivo.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.bkMascara {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+    .bkMascaraNaranja {
+        background-color: rgba( 195 , 99 , 51 , .88);
+    }
+
+        .bkMascaraNaranja + .bkMascaraContenido,
+        .bkMascaraNaranja + .bkMascaraContenido h1,
+        .bkMascaraNaranja + .bkMascaraContenido h2,
+        .bkMascaraNaranja + .bkMascaraContenido h3,
+        .bkMascaraNaranja + .bkMascaraContenido h4,
+        .bkMascaraNaranja + .bkMascaraContenido .titulo--icono,
+        .bkMascaraNaranja + .bkMascaraContenido .subtitulo,
+        .bkMascaraNaranja + .bkMascaraContenido .btn--redondo,
+        .bkMascaraNaranja + .bkMascaraContenido .btn--cuadrado,
+        .bkMascaraNaranja + .bkMascaraContenido .lista--vinculos,
+        .bkMascaraNaranja + .bkMascaraContenido .lista--vinculos li::before,
+        .bkMascaraNaranja + .bkMascaraContenido .lista--vinculos li a,
+        .bkMascaraNaranja + .bkMascaraContenido .lista--vinculos.noHover li:hover,
+        .bkMascaraNaranja + .bkMascaraContenido .lista--vinculos.noHover li:hover::before,
+        .bkMascaraNaranja + .bkMascaraContenido .lista--vinculos.noHover li a:hover,
+        .bkMascaraNaranja + .bkMascaraContenido .menuLateral-menu .nav-link.active, 
+        .bkMascaraNaranja + .bkMascaraContenido .menuLateral-menu .show > .nav-link {
+            border-color: #FFF;
+            color: #FFF;
+        }
+
+            .bkMascaraNaranja + .bkMascaraContenido a:hover {
+                color: #FFF;
+                opacity: 1;
+            }
+
+            .bkMascaraNaranja + .bkMascaraContenido a,
+            .bkMascaraNaranja + .bkMascaraContenido .menuLateral-menu .nav-link,
+            .bkMascaraNaranja + .bkMascaraContenido .lista--vinculos li:hover,
+            .bkMascaraNaranja + .bkMascaraContenido .lista--vinculos li:hover::before,
+            .bkMascaraNaranja + .bkMascaraContenido .lista--vinculos li a:hover {
+                color: #CCC;
+                border-color: #FFF; 
+            }
+
+            .bkMascaraNaranja + .bkMascaraContenido .lista--vinculos li:hover::before,
+            .bkMascaraNaranja + .bkMascaraContenido .lista--vinculos li a:hover 
+            {
+                color: #CCC;
+            }
+
+            .bkMascaraNaranja + .bkMascaraContenido .btn--redondo:hover,
+            .bkMascaraNaranja + .bkMascaraContenido .btn--cuadrado:hover {
+                background: #FFF;
+                color: #72485C;
+            }
+
+    .bkMascaraMorada {
+        background-color: rgba( 52 , 52 , 82 , .88);
+    }
+
+        .bkMascaraMorada + .bkMascaraContenido,
+        .bkMascaraMorada + .bkMascaraContenido h1,
+        .bkMascaraMorada + .bkMascaraContenido h2,
+        .bkMascaraMorada + .bkMascaraContenido h3,
+        .bkMascaraMorada + .bkMascaraContenido h4,
+        .bkMascaraMorada + .bkMascaraContenido .titulo--icono,
+        .bkMascaraMorada + .bkMascaraContenido .subtitulo,
+        .bkMascaraMorada + .bkMascaraContenido .btn--redondo,
+        .bkMascaraMorada + .bkMascaraContenido .btn--cuadrado,
+        .bkMascaraMorada + .bkMascaraContenido .lista--vinculos,
+        .bkMascaraMorada + .bkMascaraContenido .lista--vinculos li::before,
+        .bkMascaraMorada + .bkMascaraContenido .lista--vinculos li a,
+        .bkMascaraMorada + .bkMascaraContenido .lista--vinculos.noHover li:hover,
+        .bkMascaraMorada + .bkMascaraContenido .lista--vinculos.noHover li:hover::before,
+        .bkMascaraMorada + .bkMascaraContenido .lista--vinculos.noHover li a:hover,
+        .bkMascaraMorada + .bkMascaraContenido .menuLateral-menu .nav-link.active, 
+        .bkMascaraMorada + .bkMascaraContenido .menuLateral-menu .show > .nav-link {
+            border-color: #FFF;
+            color: #FFF;
+        }
+
+            .bkMascaraMorada + .bkMascaraContenido a:hover {
+                color: #FFF;
+                opacity: 1;
+            }
+
+            .bkMascaraMorada + .bkMascaraContenido a,
+            .bkMascaraMorada + .bkMascaraContenido .menuLateral-menu .nav-link,
+            .bkMascaraMorada + .bkMascaraContenido .lista--vinculos li:hover,
+            .bkMascaraMorada + .bkMascaraContenido .lista--vinculos li:hover::before,
+            .bkMascaraMorada + .bkMascaraContenido .lista--vinculos li a:hover {
+                color: #CCC;
+                border-color: #FFF; 
+            }
+
+            .bkMascaraMorada + .bkMascaraContenido .lista--vinculos li:hover::before,
+            .bkMascaraMorada + .bkMascaraContenido .lista--vinculos li a:hover 
+            {
+                color: #CCC;
+            }
+
+            .bkMascaraMorada + .bkMascaraContenido .btn--redondo:hover,
+            .bkMascaraMorada + .bkMascaraContenido .btn--cuadrado:hover {
+                background: #FFF;
+                color: #72485C;
+            }
+
+    .bkMascaraAzul {
+        background-color: rgba( 50 , 88 , 122 , .88);
+    }
+
+        .bkMascaraAzul + .bkMascaraContenido,
+        .bkMascaraAzul + .bkMascaraContenido h1,
+        .bkMascaraAzul + .bkMascaraContenido h2,
+        .bkMascaraAzul + .bkMascaraContenido h3,
+        .bkMascaraAzul + .bkMascaraContenido h4,
+        .bkMascaraAzul + .bkMascaraContenido .titulo--icono,
+        .bkMascaraAzul + .bkMascaraContenido .subtitulo,
+        .bkMascaraAzul + .bkMascaraContenido .btn--redondo,
+        .bkMascaraAzul + .bkMascaraContenido .btn--cuadrado,
+        .bkMascaraAzul + .bkMascaraContenido .lista--vinculos,
+        .bkMascaraAzul + .bkMascaraContenido .lista--vinculos li::before,
+        .bkMascaraAzul + .bkMascaraContenido .lista--vinculos li a,
+        .bkMascaraAzul + .bkMascaraContenido .lista--vinculos.noHover li:hover,
+        .bkMascaraAzul + .bkMascaraContenido .lista--vinculos.noHover li:hover::before,
+        .bkMascaraAzul + .bkMascaraContenido .lista--vinculos.noHover li a:hover,
+        .bkMascaraAzul + .bkMascaraContenido .menuLateral-menu .nav-link.active, 
+        .bkMascaraAzul + .bkMascaraContenido .menuLateral-menu .show > .nav-link {
+            border-color: #FFF;
+            color: #FFF;
+        }
+
+            .bkMascaraAzul + .bkMascaraContenido a:hover {
+                color: #FFF;
+                opacity: 1;
+            }
+
+            .bkMascaraAzul + .bkMascaraContenido a,
+            .bkMascaraAzul + .bkMascaraContenido .menuLateral-menu .nav-link,
+            .bkMascaraAzul + .bkMascaraContenido .lista--vinculos li:hover,
+            .bkMascaraAzul + .bkMascaraContenido .lista--vinculos li:hover::before,
+            .bkMascaraAzul + .bkMascaraContenido .lista--vinculos li a:hover {
+                color: #CCC;
+                border-color: #FFF; 
+            }
+
+            .bkMascaraAzul + .bkMascaraContenido .lista--vinculos li:hover::before,
+            .bkMascaraAzul + .bkMascaraContenido .lista--vinculos li a:hover 
+            {
+                color: #CCC;
+            }
+
+            .bkMascaraAzul + .bkMascaraContenido .btn--redondo:hover,
+            .bkMascaraAzul + .bkMascaraContenido .btn--cuadrado:hover {
+                background: #FFF;
+                color: #72485C;
+            }
+
+    .bkMascaraGuinda {
+        background-color: rgba( 101 , 35 , 66 , .88);
+    }
+
+        .bkMascaraGuinda + .bkMascaraContenido,
+        .bkMascaraGuinda + .bkMascaraContenido h1,
+        .bkMascaraGuinda + .bkMascaraContenido h2,
+        .bkMascaraGuinda + .bkMascaraContenido h3,
+        .bkMascaraGuinda + .bkMascaraContenido h4,
+        .bkMascaraGuinda + .bkMascaraContenido .titulo--icono,
+        .bkMascaraGuinda + .bkMascaraContenido .subtitulo,
+        .bkMascaraGuinda + .bkMascaraContenido .btn--redondo,
+        .bkMascaraGuinda + .bkMascaraContenido .btn--cuadrado,
+        .bkMascaraGuinda + .bkMascaraContenido .lista--vinculos,
+        .bkMascaraGuinda + .bkMascaraContenido .lista--vinculos li::before,
+        .bkMascaraGuinda + .bkMascaraContenido .lista--vinculos li a,
+        .bkMascaraGuinda + .bkMascaraContenido .lista--vinculos.noHover li:hover,
+        .bkMascaraGuinda + .bkMascaraContenido .lista--vinculos.noHover li:hover::before,
+        .bkMascaraGuinda + .bkMascaraContenido .lista--vinculos.noHover li a:hover,
+        .bkMascaraGuinda + .bkMascaraContenido .menuLateral-menu .nav-link.active, 
+        .bkMascaraGuinda + .bkMascaraContenido .menuLateral-menu .show > .nav-link {
+            border-color: #FFF;
+            color: #FFF;
+        }
+
+            .bkMascaraGuinda + .bkMascaraContenido a:hover {
+                color: #FFF;
+                opacity: 1;
+            }
+
+            .bkMascaraGuinda + .bkMascaraContenido a,
+            .bkMascaraGuinda + .bkMascaraContenido .menuLateral-menu .nav-link,
+            .bkMascaraGuinda + .bkMascaraContenido .lista--vinculos li:hover,
+            .bkMascaraGuinda + .bkMascaraContenido .lista--vinculos li:hover::before,
+            .bkMascaraGuinda + .bkMascaraContenido .lista--vinculos li a:hover {
+                color: #CCC;
+                border-color: #FFF; 
+            }
+
+            .bkMascaraGuinda + .bkMascaraContenido .lista--vinculos li:hover::before,
+            .bkMascaraGuinda + .bkMascaraContenido .lista--vinculos li a:hover 
+            {
+                color: #CCC;
+            }
+
+            .bkMascaraGuinda + .bkMascaraContenido .btn--redondo:hover,
+            .bkMascaraGuinda + .bkMascaraContenido .btn--cuadrado:hover {
+                background: #FFF;
+                color: #72485C;
+            }
+
+    .bkMascaraPlata {
+        background-color: rgba( 241 , 241 , 241 , .88);
+    }
+    
+    .bkMascaraBeige {
+        background-color: rgba( 227 , 221 , 209 , .88);
+    }
+        
+
+
+/* 3- Titulos */
+h1 {
+    color: #682444;
+    font-size: 1.6rem;        
+    font-weight: 600;
+}
+
+h2 {
+    color: #666;
+    font-size: 2rem;
+    font-weight: 640;
+    padding-top: 5px;
+}
+
+h3 {
+    color: #682444;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+h4 {
+    color: #315676;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+h5 {
+    color: #fd7e14;
+    font-size: 1.2rem;
+}
+
+h5[data-titulo="alterno"] {
+    font-size: .95rem;
+}
+
+h6 {
+    color: #666666;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-top: 15px;
+}
+
+h6[data-titulo="alterno"] {
+    font-size: .8rem;
+}
+
+/* 4- Titulos con fondo */
+.tituloConBk {
+    color: #FFF;
+    margin: 0;
+    padding: 5px;
+}
+
+    .tituloConBk--guinda {
+        background: #652342
+    }
+
+    .tituloConBk--azulRey {
+        background: #363554;
+    }
+
+    .tituloConBk--azulCielo {
+        background: #368677;
+    }
+
+    .tituloConBk--aquamarina {
+        background: #3B905F;
+    }
+
+    .tituloConBk--verde {
+        background: #4D903D;
+    }
+
+    .tituloConBk--grisOscuro {
+        background: #333;
+    }
+
+    .tituloConBk--grisMedio {
+        background: #666;
+    }
+
+    .tituloConBk--grisClaro {
+        background: #999;
+    }
+    
+
+hr {
+    border-top: solid 2px #682444;
+    margin: 50px 0;
+}
+
+/* 5- ESTILOS DEL ENCABEZADO DE GOBIERNO */
+.contenedorGobierno {
+    margin-top: 40px;
+    position: relative;
+}
+
+    .tituloLogo {
+        font-size: 10px;
+        color: #666;
+        position: relative;
+        top: 23px;
+    }
+
+    .plecaGob {
+        height: 120px;
+    }
+
+    .contenedorAccesibilidad {
+        bottom: 10px; right: 10px;
+        position:absolute;
+    }
+
+    #contenedorAccesibilidad-scroll.contenedorAccesibilidad {
+        background: rgba(255 , 255 , 255 , .8 );
+        bottom: -45px; right: -95px;
+        border-radius: 5px;
+        max-height: 60px;
+    }
+
+
+.subtitulo {
+    color: #333;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+    .subtitulo-n1 {
+        font-size: 1.5rem    
+    }
+
+    .subtitulo-n2 {
+        font-size: 1.2rem    
+    }
+
+    
+    .subtitulo-n3 {
+        font-size: 1rem;
+    }
+
+
+.icono:hover img:first-child {
+    display: none;
+}
+
+.icono:hover .icono-hover {
+    display: inline-block !important;
+}
+
+
+.titulo--icono {
+    color: #666666;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-top: 15px;
+}
+
+.icono:hover .titulo--icono {
+    color: #680E39;
+}
+
+
+/* 6- Buscador */
+.buscador {
+    top: 35%;
+    position: absolute;
+    width: 100%;
+}
+
+    .buscador .fa-search {
+        color: #666;
+        font-size: 1.8rem;
+
+    }
+
+
+/* 7- Parrafos y enlaces */
+p {
+    font-size: 1.1rem;
+}
+
+a p {
+    color: #212529;
+}
+
+    a:hover{
+        text-decoration: none;
+        opacity: .7;
+    }
+
+    a:hover .titulo4,
+    a:hover .bloque-fecha--gris,
+    a:hover .bloque-fecha--guinda,
+    a:hover .bloque-fecha--blanco,
+    a:hover .img-fluid,
+    a:hover p{
+        opacity: .7;
+    }
+
+.texto--resaltado {
+    color: #004f9f;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+
+/* 8- Estilos para imágenes */
+/* Hace que el texto se acomode alrededor de la imagen */
+.img-textWrap {
+    max-width: 33.33%;
+}
+
+
+/* 9- Estilos para listas */
+.lista--vinculos {
+    color: #32587A;
+    list-style-position: outside;
+    padding-left: 15px;
+}
+
+    .lista--vinculos li {
+        border-bottom: 1px solid #CCC;
+        list-style: none;
+        margin-bottom: 8px;
+        padding-left: 20px;
+        position: relative;
+    }
+
+        .lista--vinculos.sinBorde li {
+            border-bottom: none;
+        }
+
+        .lista--vinculos.bullet-check li {
+            padding-left: 20px;
+        }
+
+            .lista--vinculos.bullet-check li::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "\f058";
+                font-family: "Font Awesome 5 Free";
+                
+            }
+
+            .lista--vinculos.bullet-circulo li::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "\f111";
+                font-family: "Font Awesome 5 free";                    
+                font-weight: 900;
+                font-size: 10px;
+                padding-top: 3px;
+            }
+
+            .lista--vinculos.bullet-disco li::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "\f111";
+                font-family: "Font Awesome 5 Free";
+                font-size: 10px;
+                padding-top: 3px;
+                
+            }
+
+            .lista--vinculos.bullet-cuadrado li::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "\f04d";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                font-size: 10px;
+                padding-top: 3px;
+                
+            }
+
+        .lista--vinculos li a {
+            color: #32587A;
+        }
+
+        .lista--vinculos li:hover, /* Hace que el bullet tambien cambie de color */
+        .lista--vinculos li a:hover {
+            color: #682444;
+        }
+
+        /* Quita el efecto de hover a las listas sin enlaces */
+        .lista--vinculos.noHover li:hover,
+        .lista--vinculos.noHover li a:hover {
+            color: #32587A;
+        }
+
+.lista--vinculos-cuatroColumnas {
+    column-count: 4;
+}
+
+    /* Estilo que hace que se pongan en una columa en resoluciones pequeñas */
+    @media screen and (max-width: 768px) {
+        .lista--vinculos-cuatroColumnas  {
+            column-count: 2;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .lista--vinculos-cuatroColumnas  {
+            column-count: 1;
+        }
+    }
+
+.lista--vinculos-dosColumnas {
+    column-count: 2;
+}
+
+    /* Estilo que hace que se pongan en una columa en resoluciones pequeñas */
+
+    @media screen and (max-width: 576px) {
+        .lista--vinculos-dosColumnas  {
+            column-count: 1;
+        }
+    }
+
+    /* Estilos para los acordeones */
+
+    .acordeon .fa-plus-circle {
+        color: #682444;
+        float: right;
+        font-weight: bolder;
+        margin-top: 5px;
+    }
+
+    .acordeon a {
+        text-decoration: none;
+    }
+
+    .acordeon a.acordeon-collapse {
+        border-bottom: 2px solid #682444;
+        color: #333;
+        display: block;
+        font-size: 1.1rem;
+    }
+
+    .acordeon li {
+        list-style: none;
+        margin-bottom: 7px;
+        margin-top: 7px;
+    }
+
+        .acordeon li:before {
+            color: #666;
+            content: "•";
+        }
+
+        .acordeon li a {
+            color: #666;
+        }
+
+/* 10- Botones */
+
+.btn {
+    border: 2px solid  #435058;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+.btn-block {
+    height: calc(100% - 15px);
+}
+
+
+.btn--cuadrado svg {
+    display: none;
+    margin: 25px 0;
+}
+  
+
+.btn--redondo {
+    border-radius: 50px;
+    margin: 25px 0;
+    padding: 0 35px 0 20px;
+    position: relative;    
+}
+
+.btn--accesibilidad {
+    border-radius: 15px;
+    color: #000;
+    cursor:pointer;
+    font-size: 1rem;
+    padding: 5px; 
+}
+
+ .btn .fa-plus-circle { /* Posiciona el icono de + del lado derecho del botón */
+    font-size: 1.3rem;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+
+
+.btn--gris {
+    color: #333333;
+}
+
+    .btn--gris:hover {
+        background: #435058;
+        color: #FFF;
+    }
+
+
+.btn--guinda {
+    border-color: #682444;
+    color: #682444;
+}
+
+    .btn--guinda:hover {
+        background: #682444;
+        color: #FFF;
+    }
+
+.btn--submit {
+    background: transparent;
+}
+
+
+
+
+/* 
+  11- Bloques de información 
+*/
+
+/*Bloque con altura mediana (aprox 3 líneas de texto)*/
+.bloque-info--hg-3l {
+    height        : 3.7em;
+}
+
+
+/* Bloque con efecto hover*/
+
+.bloque--hover {
+    background: #606060;
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+    overflow: visible;
+}
+
+    .wrapper-text {
+        color: #FFF;
+        cursor: pointer;
+        height: 100%;
+        left: 0; top: 0;
+        padding: 10px;
+        position:relative;
+        visibility:hidden;
+        width: 100%;
+    }
+
+    .bloque--hover:hover .bloque--hover-titulo {
+        display: none;
+    }
+
+        .bloque--hover:hover .wrapper-text {
+            visibility: visible;
+        }
+
+
+    .bloque--hover-titulo {
+        margin: auto;
+        position: absolute;
+        top: 40%; left: 0; bottom: 0; right: 0;
+    }
+
+
+
+
+.bloque-fecha--gris {
+    background: #687F8C;
+    color: #FFF;
+    display: block;
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: 5px 15px;
+}
+
+    .bloque-fecha--gris a {
+        color: #FFF;
+    }
+
+
+.bloque-fecha--guinda {
+    background: #721B46;
+    color: #FFF;
+    display: block;
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: 5px 15px;
+}
+
+    .bloque-fecha--guinda a {
+        color: #FFF;
+    }
+
+.bloque-fecha--blanco {
+    background: #fff;
+    color: #515560;
+    display: block;
+    font-size: .95rem;
+    padding: 5px 5px 0 5px;
+}
+
+    .fa-volume-up {
+        padding-top: 8px;
+        font-size: 1.4rem;
+    }
+
+.bloque--conBorde {
+    border: 1px solid #CCC;
+    height: 100%;
+    padding: 15px;
+}
+
+    /* Bloque con fondo gris */  
+.bloque--gris-titulo {
+    background: #CCC;
+    display: block;
+    padding: 7px 25px;
+    width: 100%;
+}
+
+.bloque--gris-contenedor-texto {
+    background: #F1F1F1;
+    padding-bottom: 25px;
+    padding-top: 25px;
+ }
+
+ /* 12- Tablas */
+.tabla-interior {
+    margin: 0;
+    padding: 0 !important;
+ }
+
+ 
+.td--expand {
+    background: rgba(0,0,0,.075);
+    color: #32587A !important;
+    cursor: pointer;
+    position: relative;
+ }
+
+    .td--expand:hover {
+        font-weight: bold;
+     }
+
+
+/* MENU DE UTILERIAS */
+/*#menu-utilerias .nav-link {
+    color: #B3B3B3;
+    font-size: .8rem;
+}
+
+    #menu-utilerias .nav-link:hover {
+        color: #FFF;
+    }*/
+
+.barra-enlaces {
+    list-style: none;
+    float: right;
+    margin-top: 8px;
+}
+
+    .barra-enlaces li {
+        display: inline;
+        margin-left: 5px;
+    }
+
+    .barra-enlaces li a {
+        color: #363636;
+        display: inline;
+        font-size: .8rem;
+    }
+
+
+/*#menu-utilerias.fixed-top .navbar-brand {
+    display: none;
+}
+
+#menu-utilerias.fixed-top .barra-enlaces {
+    height: 19px;
+    margin-top: 0;
+}
+
+#menu-utilerias.fixed-top .nav-link {
+    padding: 0 1rem;
+}*/
+
+.utileriasIpn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+/* MENU LATERAL */
+.menuLateral-menu {
+    height: 100%;
+}
+
+    .menuLateral-menu .nav-link {
+        background: transparent;
+        border-bottom: 1px solid #CCC;
+        border-radius: 0;
+        color: #6f6f6f;
+        padding: 15px;
+    }
+
+    .menuLateral-menu .nav-link.active, 
+    .menuLateral-menu .show > .nav-link {
+        background: #4C4C4C;
+        border: none;
+        color: #FFF;
+    }
+
+.menuLateral-contenedor {
+    height: 100%;
+    padding: 0;
+}
+
+/* Estilos para menu lateral de la página de inicio (noticias) */
+
+#menuLateral{
+color: rgba(255, 255, 255, 1);
+background-color: rgba(104, 36, 68, 0.9);
+width: 100%;
+padding: 10px; 
+}
+
+#menuLateral p{
+text-align: left;
+font-weight: 400;
+font-size: 1.1rem;
+color:white;
+}
+
+#menuLateral::parent{
+    margin-bottom: 500px;
+}
+
+
+
+.subrayado ul, .vineta ul, .divisionLinks ul{
+-webkit-padding-start: 10px;
+    font-size: 0.95rem;
+}
+.subrayado ul li{
+border-bottom: 1px dotted;
+width: 80%;
+border-color: white; 
+    list-style-type:none;
+    margin-bottom: 2px;
+}
+.subrayado ul li a{
+color:white;
+}
+.subrayado ul li a:hover{
+opacity: .7;
+}
+.subrayado ul li a:hover{
+color:rgba(255, 255, 255, 1);
+}
+.vineta ul{
+padding-left: 30px;
+}
+.vineta ul li{
+list-style-type:square;
+}
+.vineta ul li a{
+color:white;
+}
+.vineta ul li a:hover{
+opacity: .7;
+}
+
+.vineta ul li a:hover{
+color: rgba(255, 255, 255, 1);
+}
+
+.divisionLinks ul li{
+    font-size:.8rem;
+    border-right: 1px solid #9B9A9A;
+    display: inline-block;
+    list-style: none outside none;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: auto;
+}
+.divisionLinks ul li:last-child {
+    border-right:none;
+}
+.divisionLinks ul li a {
+    color:white;
+}
+.divisionLinks ul li a:hover {
+    opacity: .7;
+}
+.divisionLinks ul li a:hover{
+color: rgba(255, 255, 255, 1);
+}
+
+
+/*buscador*/
+#contBuscador{
+text-align: center;
+}
+#tituloBuscador{
+margin-top: 10px;
+}
+#Buscador {
+  background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 0px 5px;
+  background-size: 30px;
+  background-color: white;
+  width: 100%;
+  border: solid 1px #ccc;
+  padding: 10px 10px 10px 30px;
+  outline: none;
+}
+#Buscador, #Buscador::-webkit-input-placeholder {
+    font-size: 20px;
+}
+
+/* ENCABEZADO */
+.ipnLogo-enlace {
+    position: relative;
+}
+
+.ipn-logo {
+    margin-bottom: 0;
+}
+
+.ipnLogo-slogan {
+    color: #5E2129;
+    font-size: 1rem;
+}
+
+    .ipnLogo-slogan .slogan {
+        font-size: .8rem;
+    }
+
+    .sepLogo {
+        max-height: 100px;
+    } 
+
+    .ipnLogo-enlace:hover,
+    .ipnLogo-enlace:hover .img-fluid, 
+    .ipnLogo-enlace:hover p
+     {
+       opacity: 1;
+    }
+
+        .ipnLogo-enlace img {
+            max-height: 150px;            
+        }
+
+
+/* MENU PRINCIPAL */
+
+#menu-principal {
+    background: rgb(104, 36, 68);
+    width: 100%;
+    z-index: 2; /*Para que el menu expandido se vea encima de todo*/
+}
+
+    #menu-principal .u-noPaddingContainer {
+        position: relative;
+        min-width: 1124px;
+    }
+
+    #menu-principal .u-noPaddingContainer .banderin {
+        background-image: url("../img/iconos/banderin.png");
+        background-size: cover;
+        margin: auto;
+        margin-top: -9px;
+        min-height: 100px;
+        padding: 0px;
+        position: absolute;
+        right: 100%;        
+        z-index: 10;
+    }
+
+        .banderin-img {
+            padding: 5px;
+            width: 90px;
+        }
+
+#menu-principal .navbar-nav {
+    height: 51px;
+}
+
+
+#menu-principal .navbar-nav .nav-link {
+    color: #FFF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-size: .83rem;
+}
+
+    #menu-principal .nav-item.active,
+    #menu-principal .navbar-nav .nav-link:hover {
+        background: rgb( 55 , 28 , 32);
+        height: 57px;
+    }
+
+#menu-principal.fixed-top {
+    margin-top: 45px;
+}
+
+    
+
+/* MENU MANUAL */
+
+#menu-manual {
+    background: rgb( 0 , 0 , 0);
+    z-index: 1;
+}
+
+    #menu-manual .nav-item {
+        margin: 0 15px;
+    }
+
+
+    .ancla {
+        height: 0;
+        visibility: hidden;
+        margin-top: -100px;
+        position: absolute;
+    }
+
+
+
+/* Estilo para acomodar el menu en su posición correcta cuando se hace scroll */    
+.fixed-top-menuManual {
+    top: 95px;
+}
+
+.fixed-top-tituloEscuela {
+    top: 135px;
+}
+
+/* Se quita por los tabs del buscador de biblioteca, en caso de que mueva algun estilo volver a poner
+.nav-tabs .nav-item {
+
+    font-size: .8rem;
+
+}
+*/
+
+/* Se quita el alto del menu para que se expanda cuando esta comprimido*/
+@media (max-width: 1200px) { /* El width corresponde al xl del gri de bootstrap*/
+
+    #menu-principal .navbar-nav {
+        height: 100vh;
+        overflow: scroll;
+    }
+
+}
+
+/* 18- BARRA DE NOMBRE DE LAS ESCUELAS */
+.nombreEscuela-contenedor {
+    background: rgba( 0 , 0, 0 , .7);
+    z-index: 1;
+}
+
+    .nombreEscuela-contenedor--blanco {
+        background: rgba( 255 , 255 , 255 , .9);
+        color: #5d272f;
+    }
+
+    .nombreEscuela-contenedor--negro {
+        color: #FFF;
+        display: flex;
+        justify-content: center;
+    }
+    
+.nombreEscuela-titulo {
+    color: #FFF;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.nombreUr-titulo {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    padding-left: 10px;
+}
+
+/* 19- CARRUSEL CON INDICADORES Y TEXTO */
+.carousel-caption {
+    background: rgba( 61 , 80 , 94 , 0.9 );
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: right;
+}
+
+    .carousel-caption a {
+        color: #FFF;
+        font-size: 1.4rem;
+    }
+
+.carrusel--TituloPrincipal {
+    background: rgba( 61 , 80 , 94 , 0.9 );
+    color: #FFF;
+    font-size: 2.2rem;
+    margin-bottom: 0;
+    padding: 10px 0;
+}
+
+/* 20 - CARRUSEL CENTRA */
+.owl-carousel.carouselCentral.owl-drag .owl-item {
+    opacity: .4;
+}
+    .owl-carousel.carouselCentral.owl-drag .owl-item.active.center {
+        opacity: 1;
+    }
+
+.carrusel-circulo {
+    font-size: 20px;
+}
+
+.carrusel-flecha {
+    font-size: 27px;
+}
+
+/* 21 - COMUNICADOS */
+
+.comunicados-fecha {
+    border-right: 2px solid #682444;
+    color: #682444;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+    .comunicados-fecha p {
+        font-size: 1rem;
+    }
+
+.comunicados-titulo {
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.comunicados-texto {
+    font-size: .98rem;
+}
+
+.owl-comunicado .owl-prev {
+    color: #72264B;
+    top: 45%;
+}
+
+.owl-comunicado .owl-next {
+    color: #72264B;
+    top: 45%;
+}
+
+/* 22- Articulos */ 
+ /* Artículo en tres columnas */
+.articulo--tresColumnas  {
+    column-count: 3;
+}
+
+/* Pasa las 3 columnas a una en md */
+@media screen and (max-width: 768px) {
+    .articulo--tresColumnas  {
+        column-count: 1;
+    }
+}
+
+/* Este estilo se puso para evitar que el texto brinque a la siguiente fila bajo la imágen */
+.articulo--horizontal a {
+    display: inherit;
+}
+
+
+/* 23- Directorio */
+.directorio-ecabezado {
+    background: #32587A;
+    border-color: #0F1521;
+    color: #FFF;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding: .75rem;
+}
+
+    .directorio-ecabezado .titulo {
+        margin: 0;
+        padding: 0;
+        color: #FFF;
+        padding-left: 1rem;
+    }
+    
+.directorio-seccion {
+    background: #F1F1F1;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding: .75rem;
+}
+
+    .directorio-seccion .titulo {
+        margin: 0;
+        padding: 0;
+        color: #32587A;
+        padding-left: 1rem;
+    }
+
+.directorio-fila {
+    color: #666;
+    border-bottom: 2px solid #C3C3C3;
+    font-size: 1.1rem;
+    line-height: 1.1;
+    padding: .75rem;
+    padding-bottom: 0;
+}
+
+    .directorio-nombre {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .directorio-puesto,
+    .directorio-correo {
+        margin-bottom: 5px;
+    }
+
+    .directorio-extension {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+
+/* 24- BUSCADOR DE LA BIBLOTECA */
+
+.buscadorBiblioteca {
+    background: rgba( 38 , 58 , 74, .7);
+    border: 1px solid #CCC;
+    padding: 10px 0;
+}
+
+    .buscadorBiblioteca label {
+        color: #FFF;
+    }
+
+
+    .buscadorBiblioteca h3 {
+        color: #FFF;
+        text-align: center;
+    }
+
+    .buscadorBiblioteca .nav-item {
+        width: 20%;
+    }
+
+
+
+    .buscadorBiblioteca .nav-tabs .nav-link {
+        background: #FFF;
+        border-radius: 0;
+        color: #000;
+        margin: 0 5px;
+        padding: 15px 0px;
+        text-align: center;
+    }
+
+        .buscadorBiblioteca .nav-tabs .nav-link.active {
+            background: #CCC;
+            border-color: #CCC;
+        }
+
+    .buscadorBiblioteca-btn {
+        border-radius: 0;
+        color: #FFF !important;
+        font-weight: normal;
+    }
+
+    .buscadorBiblioteca .col-2,
+    .buscadorBiblioteca .col-5 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+ /* 25- TABLAS PARA NORMATIVIDAD */
+.acuerdos {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.acuerdos th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+.acuerdos tr:nth-child(even){background-color: #f2f2f2}
+
+.acuerdos th {
+    background-color: #682444;
+    color: white;
+}
+
+/* 26- Iconos Redes Sociales */
+.fa-facebook-f {
+    color: #1E559F;
+}
+
+.fa-twitter {
+    color: #0696D2;
+}
+
+.fa-youtube {
+    color: #D61F30;
+}
+
+.fa-google-plus {
+    color: #D61F30;
+}
+
+
+.fa-blogger-b {
+    color: #E76124;
+}
+
+.fa-rss {
+    color: #F29D1F;
+}
+
+
+
+/* PIE DE PAGINA*/
+.piePagina-logoSep {
+    margin-top: 50px;
+}
+
+    .piePagina-logoSep img {
+        max-width: 130px;
+    }
+
+.piePagina-titulo {
+    font-size: 1.2rem;
+}
+
+.piePagina-texto p {
+    line-height: 2;
+}
+
+/* Ubicación */
+.ubicacion {
+    background: #333;
+    color: #FFF;
+}
+
+    .ubicacion-titulo {
+        color: #FFF;
+        font-size: 2.45rem;
+    }
+
+
+/* Estilos de pie de página de gobierno sacados de la pagina gob.mx */
+/* Header de gob.mx */
+#barraGobmx {
+    background: #eaeaea;
+}
+
+.barraGobmx-enlaces a {
+    color: #000;
+    display: inline-block;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px 15px;
+    line-height: 25px;
+}
+
+    .barraGobmx-enlaces a:hover {
+        background: #F6F6F6;
+        color: black;
+    }
+
+/* Pie de pagina de gob.mx */
+.navbar.navbar-inverse.navbar-fixed-top { /*Oculta la barra de titulo que viene de gobierno*/
+    display: none;
+}
+
+.vh, .visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: 1px;
+    padding: 0;
+    position: absolute;
+    text-indent: -9999px;
+}
+
+.col-sm-offset-4 {
+    margin-left: 33.333333333%
+}
+/*.gobierno {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+.gobierno .main-footer {
+    background-color: #28292a;
+    min-height: 56px;
+    color: white;
+    padding: 20px 0 30px;}
+
+.gobierno .main-footer .list-info {
+    line-height: auto;
+    background-color: #393b3c;
+    padding: 30px 0px 70px;
+    margin-bottom: 30px;
+}
+
+.gobierno .main-footer .list-info h2 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.gobierno .main-footer .list-info ul {
+    margin: 0px 0px 60px;
+    padding: 0px;
+}
+
+.gobierno .main-footer .list-info ul li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    line-height: 120%;
+}
+
+.gobierno .main-footer .list-info ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+    .gobierno .main-footer .list-info a.share-info:hover {
+        outline: 2px dashed #5971ad;
+    }
+
+.gobierno .main-footer .list-info p {
+    margin-bottom: 15px;
+}
+
+.gobierno .main-footer p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 136%;
+    height: auto;
+    position: static;
+}
+
+.gobierno .main-footer .list-info a {
+    color: white;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+    .gobierno .main-footer .list-info ul li a:hover {
+        text-decoration: underline;
+    }
+
+.gobierno .blue-button-footer {
+    background-color: #4a90e2;
+    color: white;
+    padding: 7px 10px 3px 14px;
+    border-radius: 0px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+}*/
+
+
+.main-footer {
+    background-color: #F6F6F6;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    min-height: 56px;
+    color: black;
+    padding: 20px 0 30px;
+}
+
+.main-footer .container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.main-footer .list-info {
+    line-height: auto;
+    background-color: #EAEAEA;
+    padding: 30px 0px 70px;
+    margin-bottom: 30px;
+}
+
+.main-footer .list-info h2 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.main-footer .list-info ul {
+    margin: 0px 0px 60px;
+    padding: 0px;
+}
+
+.main-footer .list-info ul li {
+    list-style-type: none;
+    margin: 0 0 2px;
+    padding: 0px;
+    line-height: 110%;
+}
+
+.main-footer .list-info ul li a {
+    color: #000;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+    .main-footer .list-info a.share-info:hover {
+        outline: 2px dashed #5971ad;
+    }
+
+.main-footer .list-info p {
+    margin-bottom: 15px;
+}
+
+.main-footer p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 136%;
+    height: auto;
+    position: static;
+}
+
+.main-footer .list-info a {
+    color: white;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+    .main-footer .list-info ul li a:hover {
+        text-decoration: underline;
+    }
+
+.main-footer .blue-button-footer {
+    background-color: #4a90e2;
+    color: white;
+    padding: 7px 10px 3px 14px;
+    border-radius: 0px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+}
+
+.main-footer label {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    line-height: 110%;
+}
+
+.main-footer .list-info form .form-control {
+    font-size: 14px;
+}
+
+.form-group-icon .form-control {
+    min-height: 46px;
+}
+
+.main-footer .form-control {
+    width: 100%;
+    height: 39px;
+    padding: 6px 12px;
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.main-footer .form-control, output {
+    line-height: 1.428571429;
+    color: #555;
+    display: block;
+}
+
+.main-footer .blue-right {
+    background: #b38e5d;
+    background-image: url(../img/chevronRight.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #ccc;
+    color: #fff;
+    padding: 7px 10px 3px 14px;
+    border-radius: 0;
+    position: absolute;
+    right: 19px;
+    top: 38px;
+    font-size: 18px;
+    height: 40px;
+    overflow: hidden;
+    width: 40px;
+}
+
+.list-inline>li {
+    display: inline-block;
+}
+
+.social-icon {
+    background-image: url("../img/icons_full_dark.png");
+    display: block;
+    text-indent: -9999px;
+    margin-right: 5px;
+}
+.main-footer .social-icon.facebook {
+    width: 14px;
+    height: 20px;
+    background-position: 0 0;
+}
+
+.social-icon.twitter {
+    width: 24px;
+    height: 20px;
+    background-position: -34px 0;
+}
+
+/* Estilos de gob que sobreescriben los del ipn */
+.main-footer h5 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+    font-family: inherit;
+    line-height: 1.1;
+}
+
+
+/* MAPAS DE UBICACIÓN */
+.buscadorContainer {
+    margin-top: 40px;
+}
+
+#navbarMapas {
+    margin-bottom: 25px;
+}
+
+#menu-mapas .navbar-toggler {
+    background: #333;
+    margin-bottom: 10px;
+}
+
+#navbarMapas .nav-link {
+    background: #363636;
+    border-radius: 8px;
+    height: 100%;
+    margin: 0 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+#map{
+    height: 450px;
+}
+
+#mapa {
+    margin-top: 15px;
+}
+
+.mapaPrepend {
+    background: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: .25rem 0rem 0 .25rem;
+    color: #495057;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+ 
+@media screen and (max-width: 770px) {
+    #navbarMapas {
+        background: #363636;
+    }
+   .btn-primary {
+       background-color: #232322!important;
+       width: 100%;
+       margin-top: 5px;
+       margin-bottom: 5px;
+   }
+   .list-group-item{
+        padding: .75rem 1.25rem;
+        height: 100%;
+    }
+}
+
+/* 28- FICHAS DE DATOS ABIERTOS */
+.fichaDatos {
+    background: #F2F2F2;
+    padding: 25px;
+    margin-bottom: 50px;
+}
+    
+    .fichaDatos h3 {
+        font-size: 1.2rem;
+    }
+
+    .fichaDatos h4 {
+        padding-bottom: 2px;
+    }
+
+/* 29- OFERTA EDUCATIVA*/
+.oe-one-column {
+    padding-top: 10px;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+
+    .oe-one-column h1{
+        font-size: 1.1rem;
+        padding-bottom: 5px;
+    }
+
+.oe-two-col {
+    padding-top: 15px;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+
+    .oe-two-col .informacion h1 {
+        font-size: 1.1rem;
+        padding-bottom: 5px;
+    }
+
+    .oe-two-col .informacion h3 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding-bottom: 0;
+    }
+
+    .oe-two-col .informacion h4 {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+.oe-section h2 {
+    color: #682444;
+    font-size: 1.5rem;    
+}
+
+.oe-section .objetivo {
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
+}
+
+    .oe-section .objetivo .titulo {
+        padding-bottom: 0;
+    }
+
+.oe-section .descripcion h1 {
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+}
+
+
+.oe-section .directorio-ecabezado {
+    background: #1C5082;
+    margin-bottom: 15px;
+}
+
+    .oe-section .directorio-ecabezado .titulo {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+        .oe-section .directorio-ecabezado .titulo a {
+            color: #FFF;
+        }
+
+            .oe-section .directorio-ecabezado .titulo a:hover {
+                color: #CCC;
+            }
+
+
+
+/* Icono */
+.icon-sm {
+    width: 17px;
+}
+
+
+/* 30 - UTILERIAS */
+/* Boton de regresar al inicio de la pagina */
+#top-contenedor {
+    background-color : rgba(0, 0, 0, .5);
+    border-radius    : 5px 5px 0 0;
+    bottom           : 0;
+    display          : none;
+    padding          : 0px 5px;
+    position         : fixed;
+    right            : 25px;
+
+}
+
+    #top-contenedor .top-link {
+        border          : none;
+        color           : #fff;
+        font-size: 30px;
+        line-height: 35px;
+        text-decoration : none;
+
+    }
+
+        #top-contenedor .top-link:hover {
+            color          : #5E242F;
+            text-decoration: none;
+        }
+
+/* Elimina los paddings por defoult en los contenedores que no lo requieren */
+.u-bgTransparent {
+    background: transparent !important;
+}
+
+.u-noPaddingContainer {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.u-fullHeight {
+    height: 100%;
+}
+
+.u-fw600 {
+    font-weight: 600;
+    font-size: .83;
+}
+
+.u-oculto {
+    display: none;    
+}
+
+.u-imagenSinMargen {
+    margin-bottom: -40px;
+    margin-top: -40px;
+}
+
+.u-negritas {
+    font-weight: bold;
+}
+
+.deshabiltar {
+    pointer-events: none;
+    opacity: .5;
+}
+
+/* Media querys */
+@media screen and (max-width: 1140px) {
+    .fixed-top-menuManual {        
+        top: 59px;
+    }
+
+    #menu-principal .navbar-nav .nav-link {
+        font-size: 1.1rem;
+    }
+
+    #menu-principal .u-noPaddingContainer {
+        min-width: 0px;
+        position: relative;
+    }
+
+    #menu-principal .nav-link {
+        padding-left: 10px;
+    }
+
+    #menu-principal .dropdown-item {
+        font-size: 1.1rem;
+        padding-bottom: 15px;
+        padding-top: 15px; 
+    }
+
+    .buscador {
+        padding-bottom: 10px;
+        position: relative;        
+    }
+
+    .buscadorBiblioteca .nav-item {
+        width: 50%;
+        margin-bottom: 5px;
+    }
+
+    #menu-manual .navbar-nav .nav-link {
+        font-size: 1.1rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .contenedorAccesibilidad { /* Acomoda las opciones de accesibilidad en la parte de arriba del contenedor*/
+        position: absolute;
+        bottom: 10px; right: 10px;
+    }
+
+    #contenedorAccesibilidad-scroll.contenedorAccesibilidad {
+        bottom: 4px;
+    }
+
+    .plecaGob.gob {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 886px) {
+    #barraGobmx {
+        position: relative;
+    }
+
+    .contenedorGobierno {
+        margin-top: 0;
+    }
+
+    #menu-principal.fixed-top {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 13px;
+    }
+
+    .fixed-top-menuManual {
+        top: 52px;
+    }
+
+    #menu-utilerias .nav-link,
+    #menu-utilerias.fixed-top .nav-link {        
+        font-size: 9px;
+        padding: .2rem .5rem;
+    }
+
+    #menu-manual {
+        padding: 2px;
+    }
+
+    #navbarMenuManual {
+        padding-top: 15px;
+    }
+
+    .fixed-top-tituloEscuela {
+        top: 80px;
+    }
+
+}
+
+/************* Comunicación social ************************/
+.owl-comunicado {
+    height: 415px;
+}
+
+.owl-comunicado .owl-item img  {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    max-width: initial;
+}
+
+/*************Agenda ************************/
+.eventos {
+    margin-bottom: 3rem !important;
+}   
+.bloque-evento-fecha {
+background: #721B46;
+color: #FFF;
+display: block;
+font-size: 1.5rem;
+font-weight: bolder;
+padding: 22px 15px;
+}
+.imgevent{
+padding-right: 0px;
+padding-left: 0px;
+margin: 0;
+}
+/********************************************/
+/*************RSS*****************/
+ div.feedburnerFeedBlock { 
+    border:2px solid #ddd; 
+    background-color:#e9ecef; 
+    padding:12px; 
+}
+ div.feedburnerFeedBlock p
+ {
+     font-size:0.7em;
+     color:#900;
+}
+ div.feedburnerFeedBlock .feedTitle a {
+     font-size:2.1em;
+     font:Arial, Helvetica, sans-serif bold;
+     color:#900;
+     display:none;
+ }
+  div.feedburnerFeedBlock .headline a {
+     font-size:1em;
+     font:Arial, Helvetica, sans-serif bold;
+     color:#333;
+     text-decoration:none;
+ }
+  div.feedburnerFeedBlock .fbsubscribelink a {
+     padding-top:20px;
+     padding-left:25px;
+     font-size:0.9em;
+     font:Arial, Helvetica, sans-serif bold;
+     color:#999;
+ }
+    div.feedburnerFeedBlock ul { 
+    margin-left:0; 
+    padding-left:10px; 
+    list-style-type: none ;
+}
+div.feedburnerFeedBlock ul ul {
+list-style-type: disc;
+}
+div.feedburnerFeedBlock ul ol {
+list-style-type: decimal;
+}
+div.feedburnerFeedBlock ul li span.headline { 
+font-weight:bold; 
+display:block; 
+margin:12px 0 0 0; 
+}
+div.feedburnerFeedBlock ul li div {
+    color:#666;
+}
+/*.breadcrumb {
+    display: none;
+}*/
+/******************/
+/* Media querys */
+@media screen and (max-width: 1140px) {
+    .fixed-top-menuManual {        
+        top: 39px;
+    }
+
+    #menu-principal .navbar-nav .nav-link {
+        font-size: 1.2rem;
+    }
+
+    #menu-principal .u-noPaddingContainer {
+        min-width: 0px;
+        position: relative;
+    }
+
+    #menu-principal .nav-link {
+        padding-left: 10px;
+    }
+
+    #menu-principal .dropdown-item {
+        font-size: 1.3rem;
+        padding-bottom: 15px;
+        padding-top: 15px; 
+    }
+
+    .buscador {
+        padding-bottom: 10px;
+        position: relative;        
+    }
+
+    .buscadorBiblioteca .nav-item {
+        width: 50%;
+        margin-bottom: 5px;
+    }
+
+    #menu-manual .navbar-nav .nav-link {
+        font-size: 1.2rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .contenedorAccesibilidad { /* Acomoda las opciones de accesibilidad en la parte de arriba del contenedor*/
+        position: absolute;
+        bottom: 10px; right: 10px;
+    }
+
+    #contenedorAccesibilidad-scroll.contenedorAccesibilidad {
+        bottom: 4px;
+    }
+    
+    /* Hace responsiva la imágen principal del comunicado */
+    .owl-comunicado {
+        height: auto;
+    }
+
+    .owl-comunicado .owl-item img {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-caption {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 13px;
+    }
+
+    .fixed-top-menuManual {
+        top: 32px;
+    }
+
+    .contenedorAccesibilidad {
+        bottom: 10px;
+    }
+
+    #menu-utilerias .nav-link,
+    #menu-utilerias.fixed-top .nav-link {        
+        font-size: 9px;
+        padding: .2rem .5rem;
+    }
+
+    #menu-manual {
+        padding: 2px;
+    }
+
+    #navbarMenuManual {
+        padding-top: 15px;
+    }
+
+    .fixed-top-tituloEscuela {
+        top: 61px;
+    }
+
+}
+/*TABLA IPN*/
+.tablaipn tr:first-child td{
+    font-weight: bold;
+    background-color: #682444 !important;
+    color: white!important;
+}

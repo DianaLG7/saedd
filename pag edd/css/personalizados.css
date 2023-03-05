@@ -1,0 +1,105 @@
+.box:hover{
+		box-shadow: 0 0 2px rgba(38,50,56,.2), 0 8px 24px 0 rgba(0,0,0,.2);
+		transition: box-shadow .3s cubic-bezier(.4,0,.2,1);
+	}
+.slider {
+        width: 100%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+    .row .nombreEscuelas p{
+	font-size: 14px;
+	font-family: Open Sans;
+}
+#map{
+	height: 450px;
+}
+/*Mosaico*/
+    .mosaico {
+       	 padding: 0;
+         margin: 0;
+    }
+
+	.mosaico ul {
+		 list-style: none;
+		 padding: 0;
+         margin: 0 auto;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+	}
+
+	.mosaico ul li
+	{
+		text-decoration: none;
+		float: left;
+	}
+	.mosaico ul li a
+	{
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+/*Mosaico*/
+/* Los estilos de los mapas fueron integrados al css principal */
+/*.mapwidth{
+   padding-right: 0px!important;
+   padding-left: 0px!important;
+}*/
+/* .container-fluid{
+	background-color: #232322;
+    margin-top: 25px;
+} */
+
+
+/*.nombreEscuelas ul li a{
+   text-decoration: none;
+   font-size: 1.125rem;
+   color: #315676;
+}
+.nombreEscuelas ul li a:hover{
+   font-weight: bold;
+}
+@media screen and (max-width: 770px) {
+   .listamovil{
+         display: block!important;
+   }
+   .listaweb{
+      display: none!important;
+   }
+   .btn-primary {
+       background-color: #232322!important;
+       width: 100%;
+       margin-top: 5px;
+       margin-bottom: 5px;
+   }
+   #pac-input{
+      width: 90%;
+   }
+}*/
