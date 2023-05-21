@@ -41,7 +41,7 @@
         <!-- Meta para verificación del buscador gratuito -->
         <meta name="google-site-verification" content="MFswsr8mYDk6bAjZsP4dVshJFWYQGYMY5Pit-XGGYDU" />
             
-        <link rel="shortcut icon" href="img/template/3.ico"/>
+        <!--<link rel="shortcut icon" href="img/template/3.ico"/>-->
 
         <!-- CSS Bootstrap científica -->
         <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"    rel="stylesheet">
